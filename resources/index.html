@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/layout.css">
+  	<title>thirdKing.io</title>
+    </head>
+  <body>
+     <div id="sidebar" class="collapsed">
+      <section class="info">
+      <div>
+        <nav>
+          <ul>
+            <a><li>Home</li></a>
+            <a><li>About</li></a>
+            <a><li>Projects</li></a>
+          </ul>
+        </nav>
+          <h2>Contact Me</h2>
+          <nav id="social-media">
+           <a href="https://www.linkedin.com/in/alonzo-king-iii-0b86bba2/"><i class="fab fa-linkedin fa-4x"></i></a>
+           <a href="https://github.com/KingBoolean89"><i class="fab fa-github fa-4x"></i></a>
+        </nav>
+      </div>
+       </section>
+      </div>
+     <div id="content">
+    <nav class="main-nav">
+      <span title= "Toggle sidebar " style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </nav>
+ <div class="wrapper">
+  <div class="box header">
+    <header class="showcase" id = "contents">
+        <div id="carousel" class="carousel">
+          <div class="slides">
+            <img class="slide" data-state="active" src="static/image/columbus-1936114_640.jpg" alt="">
+            <img class="slide"  src="static/image/columbus-1618317_640.jpg" alt="">
+            <img class="slide"  src="static/image/columbus-1936112_640.jpg" alt="">
+          </div>
+          <div class="indicators">
+            <input class="indicator" name="indicator" data-slide="1" data-state="active" checked type="radio" />
+            <input class="indicator" name="indicator" data-slide="2" type="radio" />
+            <input class="indicator" name="indicator" data-slide="3" type="radio" />
+          </div>
+        </div>
+      </header>
+  </div>
+  <div class="box sidebar">
+    <h4>Education</h4>
+          <ul>
+            <li>We Can Code IT Software Development Certification, 2018</li>
+            <li>Columbus State Community College AAS, Supply Chain Management, 2016-Present</li>
+          </ul>
+          <!-- Trigger/Open The Modal -->
+      <button id="myBtn">Open Modal</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+           <h2>About Me</h2>
+        <p>I'm currently an Software Development Apprentice at We Can Code It. I'm a self-driven IT professional that's passionate about building software and web apps. Along with my IT experience, I have industrial software experience and have worked with a variety of project management methodologies.</p>
+        </div>
+
+      </div> 
+      </div>  
+  <div class="box sidebar2">
+         <h4>Programming Skills</h4>
+         <ul>
+          <li>
+            <p>Java</p>
+          </li>
+          <li>
+            <p>Html</p>
+          </li>
+          <li>
+            <p>CSS3</p>
+          </li>
+          <li>
+            <p>Python</p>
+          </li>
+          <li>
+            <p>Spring Boot</p>
+          </li>
+          <li>
+            <p>Spring MVC</p>
+          </li>
+          <li>
+            <p>SQL</p>
+          </li>
+        </ul>
+  </div>
+  <div class="box content">
+    <div class = "suggestions">
+     <section class = "suggestion">
+        <h3>Virtual-Dragon</h3>
+        <figure>
+            <img src="static/image/dragon-955348_640.jpg" alt="hero image">
+        </figure>
+        <button id="menu-button1">Hide Menu</button>
+        <nav id="menu1">
+          <ul>
+            <li>Java</li>
+            <li>Eclipse</li>
+            <li>Git</li>
+          </ul>
+        </nav>
+      </section>
+       <section class = "suggestion">
+        <h3>Fortune-teller</h3>
+        <figure>
+            <img src="static/image/new-age-242773_640.jpg" alt="hero image">
+        </figure>
+        <button id="menu-button2">Hide Menu</button>
+        <nav id="menu2">
+          <ul>
+            <li>Java</li>
+            <li>Eclipse</li>
+            <li>Git</li>
+          </ul>
+        </nav>
+      </section>
+       <section class = "suggestion">
+        <h3>Review-site</h3>
+        <figure>
+            <img src="static/image/smoking-886542_640.jpg" alt="hero image">
+        </figure>
+        <button id="menu-button3">Hide Menu</button>
+        <nav id="menu3">
+          <ul>
+            <li>Java</li>
+            <li>Eclipse</li>
+            <li>Git</li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </div>
+  <div class="box footer">
+    <p>Alonzo.io &copy; 2018</p>
+ </div>
+  	 <script src="./static/javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 100vw;
+}
+
+.slides {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 3em;
+  color: white;
+  line-height: 400px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.slide:nth-child(1) {
+    background-color: red;
+    opacity: 1;
+}
+
+.slide:nth-child(2) {
+    background-color: green;
+}
+
+.slide:nth-child(3) {
+    background-color: blue;
+}
+
+.slide[data-state=active] {
+  display: block;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.indicator {
+    cursor: pointer;
+}
+#sidebar, #content {
+  height: 100%;
+  overflow:auto;
+  float:left;
+  transition: width .35s;
+}
+
+#sidebar {
+  background:white;
+  width: 30%;
+  box-shadow: 2px 0 4px rgba(0,0,0,0.5);
+}
+
+#sidebar.collapsed {
+  width: 0;
+}
+
+#sidebar.collapsed + #content {
+  width: 100%;
+}
+
+#content {
+  background:white;
+  width: 70%;
+}
+.info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info:hover{
+  background:black;
+
+ 
+}#showcase{
+  background:url('/images/columbus-196112_640.jpg') no-repeat center center;
+  border-bottom:1px solid #56a79a;
+  margin-bottom:30px;
+}
+
+#showcase .row{
+  height:600px;
+}
+
+#showcase h1{
+  font-size:50px;
+  margin:0;
+  padding-bottom:20px;
+}
+
+#showcase p{
+  color:#ccc;
+  margin:0;
+}
+
+#showcase .showcase-content{
+  background:#333;
+  color:#fff;
+  border-radius:90px;
+  padding:40px;
+  opacity:0.9;
+}
+
+/* FEATURES */
+#features h2{
+  font-size:35px;
+  margin:0;
+  padding-bottom:10px;
+}
+
+#features p{
+  color:#888;
+  margin:0;
+  margin-bottom:40px;
+}
+
+#features .fa{
+  font-size:60px;
+  color:#56a79a;
+}
+
+/* INFO */
+#info{
+  background:#333 url('../images/info-bg.jpg') no-repeat;
+  color:#fff;
+}
+
+#info h2{
+  font-size:35px;
+  margin:0;
+  padding-bottom:10px;
+}
+
+#info ul{
+  list-style:none;
+  padding:0;
+}
+
+#info li{
+  line-height:2em;
+  font-size:20px;
+}
+.fab {
+  background: -webkit-linear-gradient(#573796, #FB89FB,#FBF38C,#18FF92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.suggestion{
+   margin: 10px;
+    padding: 10px;
+    border:1px black solid;
+    border-radius:11px;
+     box-shadow:white;
+     background-color:black;
+}
+.suggestion{
+  text-align: center;
+    flex-basis: 350px;
+    justify-content:center;
+    }
+    .suggestions{
+  display:flex;
+  flex-direction:row;
+}
+figure {
+  margin: 1rem 0;
+  position: relative;
+}
+figure figcaption{
+  bottom: 0.4rem;
+  padding: 0.5rem;
+  position: absolute;
+  width: 100%;
+}
+figure img {
+  width: 100%;
+}
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  font-color:white;
+}
+footer p{
+   font-color:white;
+
